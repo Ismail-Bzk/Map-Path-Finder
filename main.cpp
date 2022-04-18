@@ -7,7 +7,7 @@ int main() {
 
 
     Graph g;
-    read_record(g,"graph.txt");/
+    read_record(g,"graph.txt");
 
     cout << "Print Graph Operation -" << endl;
     g.printGraph();

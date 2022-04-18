@@ -21,9 +21,7 @@ void read_record(Graph &g, const string fname)
 {
 
 
-	//string fname;
-	//cout<<"Enter the file name: ";
-	//cin>>fname;
+	
 
 	vector<vector<string>> content;
 	vector<string> row;
@@ -46,14 +44,7 @@ void read_record(Graph &g, const string fname)
 	else
 		cout<<"Could not open the file\n";
 
-	/*for(int i=0;i< (int)content.size();i++)
-	{
-		for(int j=0;j< (int)content[i].size();j++)
-		{
-			cout<<content[i][j]<<" ";
-		}
-		cout<<"\n";
-	}*/
+	
 
 
 	for(int i=0;i< (int)content.size();i++)
@@ -62,8 +53,6 @@ void read_record(Graph &g, const string fname)
 	    if(content[i][0]=="V"){
             v1.setStateName(content[i][0]);
             v1.setID(stoi(content[i][1]));
-            //v1.setLongitude(content[i][2]);
-            //v1.setLatitude(content[i][3]);
             g.addVertex(v1);
 
 	    }

@@ -107,7 +107,7 @@ void printShortestDistance(Graph &g, int s,
 
 
 
-    //cout << "Total visited vertex =  " << vis << endl;
+    
 	// distance from source is in distance array
 	cout << "Total vertex on path from start to end =  "
 		<< dist[dest] + 1;
